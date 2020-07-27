@@ -123,7 +123,7 @@ class MenuFoodFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent1 = new Intent( getActivity().getBaseContext(), Cart.class );
-                intent1.putExtra( "totalPrice", tvPriceCounter.getText().toString() );
+                intent1.putExtra( "totalPrice", binding.tvPriceCounter.getText().toString() );
                 intent1.putParcelableArrayListExtra( "list", (ArrayList<Food>) listCart );
                 startActivity( intent1 );
             }
