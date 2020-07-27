@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:background="#FFF">
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:padding="@dimen/_20sdp"
+            android:text="Order Food Login"
+            android:textColor="#000"
+            android:textSize="@dimen/_24sdp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/f_img_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_login"
+            android:layout_marginTop="@dimen/_20sdp">
+
+            <ImageView
+                android:id="@+id/img_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:src="@drawable/cooking" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/form_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_img_login"
+            android:layout_margin="@dimen/_15sdp"
+            android:alpha="0.85"
+            android:background="@drawable/border_ln"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp">
+
+            <EditText
+                android:id="@+id/etUsrename"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:layout_marginVertical="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:alpha="2"
+                android:background="@drawable/borderedt"
+                android:hint="Username"
+                android:padding="@dimen/_5sdp"
+                android:paddingStart="@dimen/_12sdp"
+                android:textColor="#A1F393"
+                android:textColorHint="#F5DEB3"
+                android:textSize="@dimen/_13sdp"
+                android:paddingLeft="@dimen/_12sdp">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:layout_marginVertical="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/borderedt"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingStart="@dimen/_12sdp"
+                android:textColor="#A1F393"
+                android:textColorHint="#F5DEB3"
+                android:textSize="@dimen/_13sdp">
+
+            </EditText>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_80sdp"
+                android:background="@drawable/borderbtn"
+                android:text="Login"
+                android:textColor="#000">
+
+            </Button>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</layout>
